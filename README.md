@@ -1,2 +1,1 @@
-# alx-backend-python
-README
+This repository contains code for python annotations
