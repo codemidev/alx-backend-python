@@ -1,22 +1,12 @@
 #!/usr/bin/env python3
-"""
-    Mixed lists
-"""
-from typing import Union, List
+''' Description: takes a list mxd_lst of floats and integers and
+    returns their sum as a float.
+    Arguments: mxd_lst: List[Union[int, float]]
+'''
+
+from typing import List, Union
 
 
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
-    """
-        Args:
-            mxd_lst: float-int numbers
-
-        Return:
-            Float base in int or float numbers
-    """
-
-    result: float = 0
-
-    for x in mxd_lst:
-        result += x
-
-    return result
+    ''' Return sum of elements of mxd_list. '''
+    return sum(mxd_lst)

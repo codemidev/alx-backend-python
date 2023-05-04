@@ -1,17 +1,11 @@
 #!/usr/bin/env python3
-"""
-    Handle of string with annotations
-"""
+''' Description: takes a string str1 and a string str2 as arguments
+    and returns a concatenated string
+    arguments: str1: str
+               str2: str
+'''
 
 
 def concat(str1: str, str2: str) -> str:
-    """
-        Args:
-            str1: The first string parameter
-            str1: The second string parameter
-
-        Return:
-            Concatenated string
-    """
-
-    return (str1 + str2)
+    ''' Return concatenation of str1 and str2. '''
+    return str1 + str2

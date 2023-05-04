@@ -1,21 +1,12 @@
 #!/usr/bin/env python3
-"""
-    Callable function
-"""
+''' Description: takes a float multiplier as argument and returns a function
+                 that multiplies a float by multiplier
+    Arguments: multiplier: float
+'''
+
 from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    """
-        Args:
-            multiplier: factor
-
-        Return:
-            multiplication in float
-    """
-
-    def x(f: float) -> float:
-        """ Get the second argument somthing like JS """
-        return float(f * multiplier)
-
-    return x
+    ''' Return function that multiplies float by `multiplier`. '''
+    return lambda x: x * multiplier
